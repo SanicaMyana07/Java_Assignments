@@ -11,5 +11,15 @@ public class prime_no {
                 System.out.print(i+" ");
             }
         }
+
+        
+        //using only 1 for loop.
+        for (int i = 2; i <= 100; i++) {
+            if (((i % 2 != 0) && (i % 3 != 0) && (i % 5 != 0) && (i % 7 != 0) || ((i / 2 == 1 && i % 2 == 0)
+                    || (i / 3 == 1 && i % 3 == 0) || (i / 5 == 1 && i % 5 == 0) || (i / 7 == 1 && i % 7 == 0)))) {
+                System.out.println("Second output: ");
+                System.out.print(i + " ");
+            }
+        }
     }
 }
